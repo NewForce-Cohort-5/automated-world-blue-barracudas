@@ -1,14 +1,18 @@
+body {
+    background-image: url(https://tinyurl.com/y8kn93h2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #canadaName {
     display: flex;
     border: 1px solid red;
+    background-color: red;
     justify-content: center;
+    color: whitesmoke
 }
 
-#canadaImage {
-    display: flex;
-    border: 1px solid red;
 
-}
 
 #canadaImage {
     display: flex;
@@ -23,14 +27,18 @@
 #canadaTagline {
     display: flex;
     border: 1px solid red;
+    background-color: red;
     justify-content: center;
+    color: white
 }
 
 #canadaCard {
     display: flex;
     border: 1px solid red;
     flex-direction: row;
+    background-color: whitesmoke;
     justify-content: space-evenly;
+    color: red
 }
 
 HTML,BODY {
