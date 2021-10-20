@@ -1,0 +1,37 @@
+#canadaName {
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+}
+
+#canadaImage {
+    display: flex;
+    border: 1px solid red;
+
+}
+
+#canadaImage {
+    display: flex;
+    justify-content: space-around;
+
+}
+.img {
+    height: 410px;
+    width: auto;
+}
+
+#canadaTagline {
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+}
+
+#canadaCard {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+HTML,BODY {
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/canada.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/canada.gif"), auto;}

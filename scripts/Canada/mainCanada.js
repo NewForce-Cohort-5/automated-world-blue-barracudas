@@ -1,3 +1,3 @@
-import { HTMLList } from "./canadaList.js";
-
-HTMLList()
+import { HTMLCaList, HTMLCaObjects } from "./canadaList.js";
+HTMLCaObjects()
+HTMLCaList()

@@ -1,4 +1,5 @@
-
+import { HTMLCanada } from "./canada.js";
+import { UseCanadaCountry } from "./country/countrydataprovider.js";
 import { UseCanadaCelebs } from "./celebs/celebDataProvider.js";
 import { UseCanadaCities } from "./cities/cityDataProvider.js";
 import { UseCanadaLandmarks } from "./landmarks/landmarkDataProvider.js";
@@ -11,7 +12,33 @@ const buildHTML = (canadaArray) => {
     return canadaHTMLRepresentation
 }
 
-export const HTMLList = () => {
+export const HTMLCaObjects = () => {
+    const contentElement1 = document.querySelector("#canadaName")
+    const nameObject = UseCanadaCountry()
+
+    contentElement1.innerHTML += `
+        <article class="title" id="canadaName">
+            ${nameObject.name}
+        </article>`
+
+    const contentElement2 = document.querySelector("#canadaImage")
+    const imageObject = UseCanadaCountry()
+
+    contentElement2.innerHTML += `
+        <article class="image" id="canadaImg">
+            <img class="img" src="${imageObject.image}" alt="Banff">
+        </article>`
+
+    const contentElement3 = document.querySelector("#canadaTagline")
+    const taglineObject = UseCanadaCountry()
+
+    contentElement3.innerHTML += `
+        <article class="tagline" id="canadaTagline">
+            ${taglineObject.tagline}
+        </article>`
+}
+
+export const HTMLCaList = () => {
     const contentElement = document.querySelector("#canadaCard")
 
     const cityArray = UseCanadaCities()
@@ -23,16 +50,18 @@ export const HTMLList = () => {
     const landmarkHTML = buildHTML(landmarkArray)
 
     contentElement.innerHTML += `
-        <article class="" id="#canadaCities">
+        <article class="cities" id="#canadaCities">
             <h3>Cities:<br></h3>
-                ${cityHTML}`
+                ${cityHTML}
+            </article>`
     contentElement.innerHTML += `
-        <article class="" id="#canadaLandmarks">
+        <article class="landmarks" id="#canadaLandmarks">
             <h3>Landmarks:<br></h3>
-                ${landmarkHTML}`
+                ${landmarkHTML}
+            </article>`
     contentElement.innerHTML += `
-        <article class="" id="#canadaCelebs">
+        <article class="celebrities" id="#canadaCelebs">
             <h3>Celebrities:<br></h3>
                 ${celebHTML}
-    `
+        </article>`
 }
