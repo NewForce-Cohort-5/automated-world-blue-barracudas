@@ -1,9 +1,9 @@
-const cityData = {
+const cityCanada = [
     "Toronto",
     "Montreal",
     "Vancouver"
-}
+]
 
-export const UseCities = () => {
-    return cityData.slice()
+export const UseCanadaCities = () => {
+    return cityCanada.slice()
 }

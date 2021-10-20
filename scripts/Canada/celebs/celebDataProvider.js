@@ -1,9 +1,9 @@
-const celebData = {
+const celebCanada = [
     "Ryan Reynolds",
     "Wayne Gretzky",
     "Keanu Reeves"
-}
+]
 
-export const UseCelebs = () => {
-    return celebData.slice()
+export const UseCanadaCelebs = () => {
+    return celebCanada.slice()
 }

@@ -1,9 +1,9 @@
-const landmarkData = {
+const landmarkCanada = [
     "Hockey Hall of Fame",
     "Hotel de Glace",
     "Banff National Park"
-}
+]
 
-export const UseLandmarks = () => {
-    return landmarkData.slice()
+export const UseCanadaLandmarks = () => {
+    return landmarkCanada.slice()
 }
