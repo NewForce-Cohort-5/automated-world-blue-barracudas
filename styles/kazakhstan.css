@@ -3,6 +3,16 @@ body{
     background-size: auto;
     background-repeat: no-repeat;
     background-size: cover;
+   
+}
+
+.kazHTMLData {
+    color: gold;
+}
+
+#countryStuff{
+    display: flex;
+    justify-content: space-around;
 }
 
 #countryName{
