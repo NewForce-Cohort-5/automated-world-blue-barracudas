@@ -1,0 +1,176 @@
+body {
+	background: linear-gradient(-45deg, #32c30e, #f0ff21, #c30707, #f2f5f4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#portname {
+    display: flex;
+    justify-content: center;
+    border: 3px solid green;
+    background-image: url("https://tinyurl.com/v4w2rnbe");
+}
+#portname1 {
+    color: rgb(216, 219, 12);
+    
+
+}
+#portimg {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    padding-left: 9em;
+}
+.img {
+    height: 410px;
+    width: auto;
+    
+}
+#portheadline {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    background-image: url("https://static.officeholidays.com/images/1280x853c/portugal_flag_01.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+#portheadline1 {
+    color: green;
+}
+
+#portugalCard {
+    display: flex;
+    border: 1px solid green;
+    flex-direction: row;
+   justify-content: space-evenly;
+   background-image: url("https://4bqggq445y9zafll01zckv31-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/shutterstock_759288754-e1522919015739-1024x509.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+  }
+
+.portugalCard {
+display: flex;
+color: black;
+font-size: 20px;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: rgb(245, 229, 7);
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px rgb(214, 19, 19),
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+footer {
+  border: 1px solid green;
+  padding: 10px;
+  margin-top: 2em;
+  color: #32c30e;
+}
+
+
+.countryNavigation {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid green;
+    font-family:  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16pt;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: yellow;
+  }
+
+.countryNavigation li{
+	display: inline-block;
+
+}
+
+.countryNavigation .current{
+	background-color: rgb(255, 0, 157);
+}
