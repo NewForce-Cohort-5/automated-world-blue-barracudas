@@ -19,6 +19,24 @@ const buildHTML = (portArray) => {
 
 }  
 
+
+export const navBar = () => {
+    const contentElement = document.querySelector("#navigation")
+
+
+    contentElement.innerHTML += `
+    <nav>
+    <ul class="countryNavigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="canada.html">Canada</a></li>
+    <li><a href="indonesia.html">Indonesia</a></li>
+    <li><a " href="kazakhstan.html">Kazakhstan</a></li>
+    <li><a class="current href="portugal.html">Portugal</a></li>
+</ul>
+</nav>
+    `
+}
+
 export const HTMLObjects = () => {
     const contentElement1 = document.querySelector("#portname")
     const nameObject = useCountryPortugal()
@@ -86,3 +104,21 @@ export const HTMLList = () => {
                 `
 }
 
+export const footer = () => {
+    const contentElement = document.querySelector("#footer")
+
+    contentElement.innerHTML += `
+       <p>© 2021 Barracusa Travel, Inc.</p>
+   
+    `
+
+}
+
+
+export const logo = () => {
+    const contentElement = document.querySelector("#logo")
+
+    contentElement.innerHTML += `
+    <img class="blue" id="blue" scr="https://static.wikia.nocookie.net/nickelodeon/images/b/b8/Blue_Barracudas.jpg/revision/latest/scale-to-width-down/361?cb=20151108235116"alt="">
+    `
+}

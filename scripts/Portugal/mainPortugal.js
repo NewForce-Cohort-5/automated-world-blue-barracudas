@@ -1,4 +1,7 @@
-import { HTMLList, HTMLObjects } from "./portugalList.js";
+import { footer, HTMLList, HTMLObjects, logo, navBar } from "./portugalList.js";
 
 HTMLList()
 HTMLObjects()
+navBar()
+footer()
+logo()
