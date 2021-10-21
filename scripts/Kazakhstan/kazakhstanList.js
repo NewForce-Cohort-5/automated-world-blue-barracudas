@@ -78,7 +78,7 @@ export const footer = () => {
     const contentElement = document.querySelector("#footer")
 
     contentElement.innerHTML += `
-       <p>© 2021 Barracusa Travel, Inc.</p>
+       <p>© 2021 Barracuda Travel, Inc.</p>
    
     `
 

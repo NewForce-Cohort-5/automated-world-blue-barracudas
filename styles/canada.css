@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://tinyurl.com/y8kn93h2);
+
+}
+
+#canadaName {
+    display: flex;
+    border: 1px solid red;
+    background-color: red;
+    justify-content: center;
+    color: whitesmoke
+}
+
+
+
+#canadaImage {
+    display: flex;
+    justify-content: space-around;
+
+}
+.img {
+    height: 410px;
+    width: auto;
+}
+
+#canadaTagline {
+    display: flex;
+    border: 1px solid red;
+    background-color: red;
+    justify-content: center;
+    color: white
+}
+
+#canadaCard {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    color: red
+}
+
+HTML,BODY {
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/canada.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/canada.gif"), auto;}
