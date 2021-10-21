@@ -119,6 +119,6 @@ export const logo = () => {
     const contentElement = document.querySelector("#logo")
 
     contentElement.innerHTML += `
-    <img class="blue" id="blue" scr="https://static.wikia.nocookie.net/nickelodeon/images/b/b8/Blue_Barracudas.jpg/revision/latest/scale-to-width-down/361?cb=20151108235116"alt="">
+    <img class="logo" id="logo" src="/images/bluebarracuda.png" alt="logo"></img>
     `
 }
