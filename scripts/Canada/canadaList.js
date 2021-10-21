@@ -12,6 +12,22 @@ const buildHTML = (canadaArray) => {
     return canadaHTMLRepresentation
 }
 
+export const navBar = () => {
+    const contentElement = document.querySelector("#navigation")
+
+    contentElement.innerHTML += `
+    <nav>
+    <ul class="countryNavigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="current" href="canada.html">Canada</a></li>
+    <li><a href="indonesia.html">Indonesia</a></li>
+    <li><a href="kazakhstan.html">Kazakhstan</a></li>
+    <li><a href="portugal.html">Portugal</a></li>
+</ul>
+</nav>
+    `
+}
+
 export const HTMLCaObjects = () => {
     const contentElement1 = document.querySelector("#canadaName")
     const nameObject = UseCanadaCountry()
@@ -64,4 +80,21 @@ export const HTMLCaList = () => {
             <h3>Celebrities:<br></h3>
                 ${celebHTML}
         </article>`
+}
+export const footer = () => {
+    const contentElement = document.querySelector("#footer")
+
+    contentElement.innerHTML += `
+       <p>© 2021 Barracuda Travel, Inc.</p>
+   
+    `
+
+}
+
+export const logo = () => {
+    const contentElement = document.querySelector("#logo")
+
+    contentElement.innerHTML += `
+    <img class="logo" id="logo" src="/images/bluebarracuda.png" alt="logo"></img>
+    `
 }

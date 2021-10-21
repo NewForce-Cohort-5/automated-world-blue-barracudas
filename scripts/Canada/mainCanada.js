@@ -1,3 +1,6 @@
-import { HTMLCaList, HTMLCaObjects } from "./canadaList.js";
+import { HTMLCaList, HTMLCaObjects, navBar, footer, logo } from "./canadaList.js";
+logo()
+navBar()
 HTMLCaObjects()
 HTMLCaList()
+footer()

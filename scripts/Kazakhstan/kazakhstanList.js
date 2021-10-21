@@ -26,10 +26,10 @@ export const navBar = () => {
     <nav>
     <ul class="countryNavigation">
     <li><a href="index.html">Home</a></li>
-    <li><a href="canada.html">Italy</a></li>
-    <li><a href="indonesia.html">Spain</a></li>
-    <li><a class="current" href="kazakhstan.html">Scotland</a></li>
-    <li><a href="portugal.html">Germany</a></li>
+    <li><a href="canada.html">Canada</a></li>
+    <li><a href="indonesia.html">Indonesia</a></li>
+    <li><a class="current" href="kazakhstan.html">Kazakhstan</a></li>
+    <li><a href="portugal.html">Portugal</a></li>
 </ul>
 </nav>
     `
@@ -78,7 +78,7 @@ export const footer = () => {
     const contentElement = document.querySelector("#footer")
 
     contentElement.innerHTML += `
-       <p>© 2021 Barracusa Travel, Inc.</p>
+       <p>© 2021 Barracuda Travel, Inc.</p>
    
     `
 
