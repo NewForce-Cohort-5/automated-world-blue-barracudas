@@ -19,6 +19,11 @@ body{
     text-align: center;
 }
 
+#countryTag{
+    text-align: center;
+}
+
+
 #countryStuff {
     display: flex;
 }
