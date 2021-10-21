@@ -51,9 +51,9 @@ export const HTMLList = () => {
     
 
         <article class="kazHTMLData">
-            
-            <div id="countryImage"><img src=${kazInfoArray.image}></div>
+
             <h1 id="countryName">${kazInfoArray.name}</h1>
+            <div id="countryImage"><img src=${kazInfoArray.image}></div>
             <h2 id="countryTag">${kazInfoArray.tagline}</h2>
             
             <div id="countryStuff">
@@ -83,3 +83,17 @@ export const footer = () => {
     `
 
 }
+
+
+export const logo = () => {
+    const contentElement = document.querySelector("#logo")
+
+    contentElement.innerHTML += `
+    <img src="/images/bluebarracuda.png"" alt="logo"></img>
+   
+    `
+
+}
+
+
+
