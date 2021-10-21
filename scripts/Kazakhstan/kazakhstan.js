@@ -11,6 +11,8 @@ export const HTMLObject = (singleObject) => {
 
 
 
+
+
 // export const HTMLCities = (citieString) => {
 //     return `
 //     <div class="citiesCard">

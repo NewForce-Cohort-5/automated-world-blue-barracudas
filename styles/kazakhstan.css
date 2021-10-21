@@ -1,0 +1,27 @@
+body{
+    background-image: url("https://traveler.marriott.com/wp-content/uploads/2020/02/GI_979756044_KhanShatyr_RF.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#countryName{
+    text-align: center;
+}
+
+#countryStuff {
+    display: flex;
+}
+
+
+#countryImage {
+   display: flex; 
+   justify-content: space-around;
+    
+}
+
+footer {
+    border: 1px dotted black;
+    padding: 10px;
+    margin-top: 2em;
+}
