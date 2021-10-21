@@ -2,7 +2,7 @@ import { HTMLObject } from "./kazakhstan.js";
 import { useCities } from "./cities/cityDataProvider.js";
 import { useCelebs } from "./celebs/celebDataProvider.js";
 import { useLandmarks } from "./landmarks/landmarkDataProvider.js";
-
+import { useKazInfo } from "./kazDataProvider.js";
 
 const buildHTML = (kazArray) => {
 
@@ -17,6 +17,24 @@ const buildHTML = (kazArray) => {
 
 }
 
+
+export const navBar = () => {
+    const contentElement = document.querySelector("#navigation")
+
+
+    contentElement.innerHTML += `
+    <nav>
+    <ul class="countryNavigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="canada.html">Italy</a></li>
+    <li><a href="indonesia.html">Spain</a></li>
+    <li><a class="current" href="kazakhstan.html">Scotland</a></li>
+    <li><a href="portugal.html">Germany</a></li>
+</ul>
+</nav>
+    `
+}
+
 export const HTMLList = () => {
     const contentElement = document.querySelector("#kazData")
 
@@ -27,16 +45,41 @@ export const HTMLList = () => {
     const cityHTML = buildHTML(cityArray)
     const celebHTML = buildHTML(celebArray)
     const landmarkHTML = buildHTML(landmarkArray)
+    const kazInfoArray = useKazInfo()
 
     contentElement.innerHTML += `
+    
+
         <article class="kazHTMLData">
-            <h3>Cities:<br></h3>
-                ${cityHTML}
-            <h3>Landmarks:<br></h3>
-                ${landmarkHTML}
-            <h3>Citizens:<br></h3>
-                ${celebHTML}
-                
+            
+            <div id="countryImage"><img src=${kazInfoArray.image}></div>
+            <h1 id="countryName">${kazInfoArray.name}</h1>
+            <h2 id="countryTag">${kazInfoArray.tagline}</h2>
+            
+            <div id="countryStuff">
+            
+            <div>
+            <h3>Cities:<br> </h3>
+                    ${cityHTML}
+                    </div>
+            <div>    <h3>Landmarks:<br></h3>
+                    ${landmarkHTML}
+            </div>
+            <div>    <h3>Citizens:<br></h3>
+                    ${celebHTML}
+                    </div>
+            </div>    
+        
             `
+
+}
+
+export const footer = () => {
+    const contentElement = document.querySelector("#footer")
+
+    contentElement.innerHTML += `
+       <p>© 2021 Barracusa Travel, Inc.</p>
+   
+    `
 
 }
