@@ -2,7 +2,7 @@
 
 //import function that lists all data from array
 
-import { HTMLList } from "./kazakhstanList.js";
+import { HTMLList, navBar, footer } from "./kazakhstanList.js";
 
 
 //create a copy of data lists 
@@ -14,5 +14,6 @@ import { HTMLList } from "./kazakhstanList.js";
 // }
 
 
-
+navBar()
 HTMLList()
+footer()
